@@ -8,19 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js' integrity='sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==' crossorigin='anonymous'></script>
+    <script src="/log/js/main.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World!</title>
 </head>
 <body>
     <!-- 상단메뉴 시작 -->
+    <div id="all_wrap">  
     <header id="header_wrap">
         <div id="header_inner">
             <ul id="header_list">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#;">HOME</a></li>
+                <li><a href="#;">PORTFOLIO</a></li>
+                <li><a href="#;">ABOUT ME</a></li>
+                <li><a href="#;">CONTACT</a></li>
             </ul>
         </div>
     </header>
@@ -29,7 +32,7 @@
     <!-- 콘텐츠 시작 -->
     <div id="contents_wrap">
     <!-- 자기소개 시작 -->
-    <nav id="info_wrap">
+    <nav id="info_wrap" class="contents">
         <div id="info_inner">
             <table id="info">
                 <tr id="info_blank">
@@ -60,7 +63,7 @@
     <!-- 자기소개 끝 -->
 
     <!-- 포트폴리오 시작 -->
-    <nav id="portfolio_wrap">
+    <nav id="portfolio_wrap" class="contents">
         <div id="portfolio_inner">
             <ul id="portfolio_list">
             <div id="portfolio_asteroid"><img src="/log/images/asteroid_img.png" alt="Orbit of pearl"></div>
@@ -98,7 +101,7 @@
     <!-- 포트폴리오 끝 -->
 
     <!-- 툴활용능력 시작 -->
-    <nav id="about_me_wrap">
+    <nav id="about_me_wrap" class="contents">
         <div id="about_me_inner">
             <ul id="about_me_list">
                 <li>
@@ -134,13 +137,13 @@
                     </ul>
                 </li>
                 <li>
-                    <p class="about_me_title">Like</p>
-                    <ul class="about_me_tool">
-                        <li>Drawing</li>
-                        <li>Reading</li>
-                        <li>Writing</li>
-                        <li>Ballet</li>
-                        <li>Listening Music</li>
+                    <p class="about_me_title line_white">Like</p>
+                    <ul class="about_me_tool bottom_line_white">
+                        <li>&middot; Drawing</li>
+                        <li>&middot; Reading</li>
+                        <li>&middot; Writing</li>
+                        <li>&middot; Ballet</li>
+                        <li>&middot; Listening Music</li>
                     </ul>
                 </li>
             </ul>
@@ -149,7 +152,7 @@
     <!-- 툴활용능력 끝 -->
 
     <!-- 컨텍트 시작 -->
-    <nav id="contact_wrap">
+    <nav id="contact_wrap" class="contents">
         <div id="contact_inner">
             <dl id="contact_list">
                 <dt>CONTACT ME</dt>
@@ -157,7 +160,7 @@
                 <dd>1996. 03. 25&nbsp;&nbsp;&nbsp;&nbsp;Seoul, South Korea</dd>
                 <dd>hwanyamyu@gmail.com</dd>
                 <dd>010. 2983. 6432</dd>
-                <button>Back to HOME</button>
+                <button><a href="#">Back to HOME</a></button>
             </dl>
         </div>
     </nav>
@@ -165,5 +168,6 @@
 
     </div>
     <!-- 콘텐츠 끝 -->
+    </div>
 </body>
 </html>

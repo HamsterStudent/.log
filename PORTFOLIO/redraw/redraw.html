@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/log/css/reset.css">
-    <link rel="stylesheet" href="/log/css/common.css">
+    <link rel="stylesheet" href="/log/css/sub_common.css">
     <link rel="stylesheet" href="/log/redraw/css/redraw.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RE:DRAW Project</title>
 </head>
 <body>
     <!-- 상단메뉴 시작 -->
@@ -42,9 +42,13 @@
                         캔버스의 분리수거가 제대로 이루어지지 않고 노출된 환경에 작품이 방치될 시에는 추가적으로</br>
                         환경 오염을 야기할 가능성이 있어, 리드로우는 위 문제를 해결하고자 탄생한 서비스입니다.
                     </dd>
-                    <dd class="content_text_bold"><p>DESIGN</p><div></div><p>100%</p></dd>
-                    <dd class="content_text_bold"><p>HTML/CSS</p><div></div><p>100%</p></dd>
-                    <dd class="content_text_bold"><p>JavaScript</p><div></div><p>100%</p></dd>
+                    <dd class="content_percent">
+                        <ul id="content_percent_list">
+                            <li><div class="percent_title">DESIGN</div><div class="active_percent"></div><div class="percent_number">100%</div></li>
+                            <li><div class="percent_title">HTML/CSS</div><div class="active_percent"></div><div class="percent_number">100%</div></li>
+                            <li><div class="percent_title">JavaScript</div><div class="active_percent"></div><div class="percent_number">100%</div></li>
+                        </ul>
+                    </dd>
                 </dl>
                 <div id="redraw_idea">
                     <dl id="redraw_idea_list">
@@ -60,10 +64,163 @@
                         </dd>
                     </dl>
                 </div>
-
+                <ul id="redraw_goal_list">
+                    <h2 class="category_title">Goal</h2>
+                    <li>
+                        <p class="goal_title">Visual Design</p>
+                        <p class="goal_text">기존 재활용품 업체와는 결을 달리 하기 위하여</br>정형화된 패턴과 초록색 중심의 디자인을 피하는 것을 목표로 함.</p>
+                    </li>
+                    <li>
+                        <p class="goal_title">User Interface</p>
+                        <p class="goal_text">모바일, PC와 같은 환경에서도 필요한 컨텐츠를 적절히 잘 보기 위해</br>반응형 웹사이트로 사이트를 제작</p>
+                    </li>
+                    <li>
+                        <p class="goal_title">Contents</p>
+                        <p class="goal_text">공공의 이익을 위해 여타 미술 용품의 올바른 폐기 방법을 안내</br>일정량 이상의 폐캔버스는 캔필에 수거신청할 수 있다.</br>수거한 캔버스로 제작한 연필 기부자에게 일부 전달 후 나머지 제품들은</br>웹사이트에 게시하여 판매</p>
+                    </li>
+                    <li>
+                        <p class="goal_title">Service & Marketing</p>
+                        <p class="goal_text">작품을 통째로 보내준 사용자에 한하여 캔필 내에서 자체적으로 작업을 촬영,</br>
+                           아카이빙 형식으로 홈페이지 내에 게시,</br>작업에 담긴 이야기 인터뷰하여 뉴스레터 형식으로 게시 & 미술인 홍보,</br>환경 관련 미술품 담론 뉴스레터 제작,</br>상품 구매 시 환경단체에 전달되는 금액 페이지 제작</p>
+                    </li>
+                </ul>
+                <!-- 리드로우퍼소나 시작 -->
+                <div id="redraw_persona_wrap">
+                    <h2 class="category_title">User Persona</h2>
+                    <div id="redraw_persona_inner">
+                        <ul class="redraw_persona_list">
+                            <h3 class="redraw_persona_people">전민수<br>미술대학교에 재학하는 20대 대학생</h3>
+                            <li>
+                                <p class="redraw_persona_sub_title">NEEDS</p>
+                                <p class="redraw_persona_text">틀어진 캔버스 틀도 재활용하고 싶어요</p>
+                            </li>
+                            <li>
+                                <p class="redraw_persona_sub_title">PAIN POINT</p>
+                                <p class="redraw_persona_text">멀쩡한 나무를 그냥 버리자니 찜찜하고 아까워요<br>캔버스 틀을 뜯기 귀찮아요</p>
+                            </li>
+                            <li>
+                                <p class="redraw_persona_sub_title">GOAL</p>
+                                <p class="redraw_persona_text">실용성 있는 제품으로 다시 가지고 싶어요<br>재활용이 간편했으면 좋겠어요</p>
+                            </li>
+                            <li>
+                                <p class="redraw_persona_sub_title">STORY</p>
+                                <p class="redraw_persona_text">저는 미대생인데 학교 과제가 많아서 캔버스를 구매할 일이 많아요. 작품을 만들고<br>나면 처음엔 버리기가 아까워서 계속 가지고 있게 되는데, 나중에 보면 짐 덩어리<br>더라구요. 제 부스에 더 이상 그림을 둘 공간도 부족하구요. 그래서 필요가 없어진<br>그림은 뜯어서 새 천을 씌워 재활용하거나 하는데, 보관을 잘못 해 둬서 캔버스 나<br>무가 틀어진 것들은 다시 쓸 수가 없어요. 그런 것만 빼면 멀쩡한 나무인데 버리기<br>도 찜찜하구요. 간편하게 이 틀들을 재활용을 할 수 있는 서비스가 있었으면 좋겠<br>어요</p>
+                            </li>
+                            <li class="redraw_persona_graph">
+                                <p class="redraw_persona_sub_title">INDIVIDUALITY</p>
+                                <ul class="redraw_persona_text graph_top">
+                                    <li>환경적이지 않음</li>
+                                    <li>능동적</li>
+                                    <li>불편함 감수</li>
+                                    <li>내향적</li>
+                                    <li>관심 없음</li>
+                                </ul>
+                                <div></div>
+                                <ul class="redraw_persona_text graph_bottom">
+                                    <li>환경적이지 않음</li>
+                                    <li>수동적</li>
+                                    <li>편의성 중시</li>
+                                    <li>외향적</li>
+                                    <li>업사이클링 관심</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="redraw_persona_sub_title submenu_content">CONTACT POINT</p>
+                                <ul class="submenu_content">
+                                    <li>
+                                        <p class="redraw_persona_sub_title">TIME</p>
+                                        <p class="redraw_persona_text">등하교 시간 / 작업 중 휴식시간</p>
+                                    </li>
+                                    <li>
+                                        <p class="redraw_persona_sub_title">PLACE</p>
+                                        <p class="redraw_persona_text">미술대학교 부스 / 로비</p>
+                                    </li>
+                                    <li>
+                                        <p class="redraw_persona_sub_title">TOGETHER</p>
+                                        <p class="redraw_persona_text">온라인 활동이 익숙함.<br>학과 사람들 전부가 비슷한 고충을<br>가지고 있음</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="redraw_persona_list">
+                            <h3 class="redraw_persona_people">김지형<br>환경 문제에 관심이 많은 30대</h3>
+                            <li>
+                                <p class="redraw_persona_sub_title">NEEDS</p>
+                                <p class="redraw_persona_text">업사이클링 물품을 사고 싶어요<br>간단하게 선물할만한 제품이 필요해요</p>
+                            </li>
+                            <li>
+                                <p class="redraw_persona_sub_title">PAIN POINT</p>
+                                <p class="redraw_persona_text">기존의 업사이클링 제품들은 대부분 비싸요<br>뜻깊은 의미를 담은 선물을 주고 싶어요</p>
+                            </li>
+                            <li>
+                                <p class="redraw_persona_sub_title">GOAL</p>
+                                <p class="redraw_persona_text">적당한 가격의 제품이 있었으면 좋겠어요<br>환경친화적이었으면 좋겠어요</p>
+                            </li>
+                            <li>
+                                <p class="redraw_persona_sub_title">STORY</p>
+                                <p class="redraw_persona_text">저는 환경 문제에 관심이 많아요. 특히 자원이 낭비되는 것은 별로 내키지 않아서<br>업사이클링 제품을 자주 구매하고는 하죠. 그런데 업사이클링 제품들은 가격 단가<br>가 높아 선물용으로 구매하기엔 부담스러워요. 적당하고 실용적이고, 환경을 생각<br>하면서 특별한 이야기가 담겨서, 받는 사람에게 환경 문제에 대한 생각을 유도할<br>수 있을 만한 선물거리가 있었으면 좋겠어요
+                            </li>
+                            <li class="redraw_persona_graph graph_postion">
+                                <p class="redraw_persona_sub_title">INDIVIDUALITY</p>
+                                <ul class="redraw_persona_text graph_top">
+                                    <li>환경적이지 않음</li>
+                                    <li>능동적</li>
+                                    <li>불편함 감수</li>
+                                    <li>내향적</li>
+                                    <li>관심 없음</li>
+                                </ul>
+                                <div></div>
+                                <ul class="redraw_persona_text graph_bottom">
+                                    <li>환경적이지 않음</li>
+                                    <li>수동적</li>
+                                    <li>편의성 중시</li>
+                                    <li>외향적</li>
+                                    <li>업사이클링 관심</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="redraw_persona_sub_title submenu_content">CONTACT POINT</p>
+                                <ul class="submenu_content">
+                                    <li>
+                                        <p class="redraw_persona_sub_title">TIME</p>
+                                        <p class="redraw_persona_text">출퇴근 시간 / 퇴근 후 여가시간</p>
+                                    </li>
+                                    <li>
+                                        <p class="redraw_persona_sub_title">PLACE</p>
+                                        <p class="redraw_persona_text">출퇴근 전철 / 회사 점심시간</p>
+                                    </li>
+                                    <li>
+                                        <p class="redraw_persona_sub_title">TOGETHER</p>
+                                        <p class="redraw_persona_text">온라인 활동이 익숙함.<br>친구가 많아서 퇴근 후 만나기도 함</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <!-- 리드로우퍼소나 끝 -->
             </div>
-            
         </nav>
+        <!-- 스토리보드 시작 -->
+        <nav id="redraw_storyboard_wrap">
+            <div id="redraw_storyboard_inner">
+                <h2 class="category_title">Storyboard</h2>
+                <div class="redraw_storyboard_img">
+                    <img src="/log/redraw/images/storyboard01.png" alt="리드로우스토리보드메인">
+                    <img src="/log/redraw/images/storyboard02.png" alt="리드로우스토리보드소개">
+                    <img src="/log/redraw/images/storyboard03.png" alt="리드로우스토리보드배출예약">
+                    <img src="/log/redraw/images/storyboard04.png" alt="리드로우스토리보드이벤트">
+                    <img src="/log/redraw/images/storyboard05.png" alt="리드로우스토리보드메기부금현황">
+                    <img src="/log/redraw/images/storyboard06.png" alt="리드로우스토리보드회원가입">
+                    <img src="/log/redraw/images/storyboard07.png" alt="리드로우스토리보드장바구니">
+                    <img src="/log/redraw/images/storyboard08.png" alt="리드로우스토리보드소식">
+                    <img src="/log/redraw/images/storyboard09.png" alt="리드로우스토리보드배출접수">
+                </div>  
+            </div>
+        </nav>
+        <!-- 스토리보드 끝 -->
+
     </div>
     <!-- 콘텐츠 끝 -->
 </body>

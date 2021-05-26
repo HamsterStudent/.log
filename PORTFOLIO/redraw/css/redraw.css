@@ -16,7 +16,8 @@ div#content_wrap{
     width: 100%; height: 100%; float: left;
 }
 nav#redraw_info_wrap{
-    width: 100%; height: 100%;
+    width: 100%; height: auto; float: left;
+    position: relative; left: 0px; top: 0px;
 }
 div#redraw_info_inner{
     width: 1400px; height: 100%;
@@ -39,11 +40,12 @@ div#redraw_mob_img{
     background: url('/log/redraw/images/redraw_mob.png')no-repeat; background-size: cover;
 }
 dl#redraw_introduce_list{
-    width: 700px; height: 400px; margin-top: 25px;
-    background: darkcyan;
+    width: 700px; height: 400px; margin-top: 18px;
 }
-dt.category_title{
-    font: normal 48px "Roboto"; color: white; font-weight: 500;
+.category_title{
+    font: normal 48px "Roboto";
+    color: white;
+    font-weight: 500;
 }
 dd.category_sub_title{
     font: normal 24px "Roboto"; color: white; font-weight: 400;
@@ -52,17 +54,150 @@ dd.content_text{
     margin-top: 30px; margin-bottom: 40px;
     font: normal 14px/24px "Roboto"; color: white; font-weight: 400; letter-spacing: -5%;
 }
+/* 리드로우소개설정 시작 */
 dl#redraw_introduce_list dd{
     float: left;
 }
-dd.content_text_bold{
-    font: normal 16px "Roboto"; color: white; font-weight: 400;
-    margin-top: 10px;
+dd.content_percent{
+    width: 479px; height: 80px;
+}
+ul#content_percent_list{
+    position: relative; left: 0px; top: 0px;
+}
+ul#content_percent_list>li{
+    float: left;
+    position: absolute; left: 0px; top: 0px;
+}
+ul#content_percent_list>li:nth-child(2){
+    top: 30px;
+}
+ul#content_percent_list>li:nth-child(3){
+    top: 60px;
+}
+ul#content_percent_list>li>div{
+    float: left; margin-right: 10px;
+}
+div.percent_title{
+    position: absolute; left: 0px;
+    font-weight: 700; color: white;
+}
+div.active_percent{
+    position: absolute; left: 100px;
+    width: 307px; height: 10px; border-radius: 5px; float: left;
+    background: white; margin-top: 2px;
+}
+div.percent_number{
+    position: absolute; left: 430px; color: white;
 }
 dd.content_text_bold div{
-    width: 307px; height: 10px; border-radius: 5px; float: left;
-    background: white;
+    float: left; 
 }
-dd.content_text_bold p{
+/* 리드로우소개설정 끝 */
+div#redraw_idea{
+    padding-top: 54px; box-sizing: border-box;
+    width: 100%; height: 474px;
+}
+ul#redraw_goal_list{
+    width: 100%; height: 500px;
     float: left;
 }
+ul#redraw_goal_list li{
+    width: 50%; height: 200px; float: left; margin-top: 20px;
+    text-align: center;
+}
+p.goal_title{
+    font: normal 24px "Roboto"; font-weight: 500; color: white;
+    margin-bottom: 37px;
+}
+p.goal_text{
+    font: normal 16px/24px "Roboto"; color: white;
+}
+/* 리드로우퍼소나설정 시작 */
+div#redraw_persona_wrap{
+    width: 100%; height: 1100px; float: left; margin-top: 60px;
+}
+div#redraw_persona_inner{
+    width: 100%; height: 1000px; margin: 0px auto; margin-top: 30px;
+    border: solid 2px white; box-sizing: border-box;
+    padding: 40px;
+}
+ul.redraw_persona_list{
+    width: 100%; height: 450px; float: left;
+    position: relative; left: 0px; top: 0px;
+}
+ul.redraw_persona_list:last-child{
+    margin-top: 30px;
+}
+h3.redraw_persona_people{
+    font: normal 16px "Roboto"; font-weight: 700; color: white;
+    margin-bottom: 40px;
+}
+ul.redraw_persona_list>li{
+    margin-bottom: 20px;
+}
+ul.redraw_persona_list>li:nth-child(5){
+    position: absolute; left: 410px; top: 80px;
+}
+ul.redraw_persona_list>li:nth-child(6){
+    position: absolute; left: 410px; top: 300px;
+}
+ul.redraw_persona_list>li:last-child{
+    position: absolute; right: 0px; top: 80px;
+}
+p.redraw_persona_sub_title{
+    font: normal 16px "Roboto"; color: white; font-weight: 500;
+    margin-bottom: 10px;
+}
+.redraw_persona_text{
+    font: normal 16px/24px "Roboto"; color: white; font-weight: 400;
+    letter-spacing: -1px;
+}
+ul.submenu_content li{
+    margin-top: 20px;
+}
+li.redraw_persona_graph{
+    width: 540px; height: 150px;
+}
+li.redraw_persona_graph>div{
+    width: 100%; height: 1px; background: white; margin: 30px auto; float: left;
+}
+li.redraw_persona_graph>ul>li{
+    width: 108px; height: 24px; float: left;
+    text-align: center;
+    position: relative; left: 0px; top: 0px;
+    font: normal 16px "Roboto"; font-weight: 400; letter-spacing: -1px;
+}
+li.redraw_persona_graph>ul>li::after{
+    content: "";
+    width: 15px; height: 15px; background: white;
+    position: absolute; left: 50%; top: 30px; margin-left: -7.5px;
+    border-radius: 7.5px;
+}
+ul.graph_top>li:nth-child(2)::after{
+    background: transparent;
+}
+ul.graph_top>li:nth-child(3)::after{
+    background: transparent;
+}
+ul.graph_top>li:last-child::after{
+    background: transparent;
+
+}
+li.redraw_persona_graph>ul.graph_bottom>li::after{
+    top: -22px;
+}
+ul.graph_bottom>li:first-child::after{
+    background: transparent;
+}
+ul.graph_bottom>li:nth-child(4)::after{
+    background: transparent;
+}
+/* 리드로우퍼소나설정 끝 */
+/* 스토리보드설정 시작 */
+nav#redraw_storyboard_wrap{
+    width: 100%; height: 1300px; float: left;
+}
+div#redraw_storyboard_inner{
+    width: 1400px; height: 100%; margin: 0px auto;
+}
+/* 스토리보드설정 끝 */
