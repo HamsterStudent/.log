@@ -195,9 +195,37 @@ ul.graph_bottom>li:nth-child(4)::after{
 /* 리드로우퍼소나설정 끝 */
 /* 스토리보드설정 시작 */
 nav#redraw_storyboard_wrap{
-    width: 100%; height: 1300px; float: left;
+    width: 100%; height: 1800px; float: left;
+    margin-top: 20px;
 }
 div#redraw_storyboard_inner{
     width: 1400px; height: 100%; margin: 0px auto;
 }
+ul#redraw_storyboard_list{
+    width: 100%; font-size: 0;
+    margin-top: 20px;
+}
+ul#redraw_storyboard_list li{
+    width: 32.85%;
+    margin-right: 10px; margin-bottom: 10px;
+    display: inline-block; vertical-align: top;
+    background: cyan;
+}
+ul#redraw_storyboard_list img{
+    width: 100%;
+    background-size: cover;
+}
+ul#redraw_storyboard_list li:nth-child(3n){
+    margin-right: 0px;
+}
 /* 스토리보드설정 끝 */
+/* 스타일가이드설정 시작 */
+nav#redraw_styleguide_wrap{
+    width: 100%; height: 600px; float: left;
+    background: lightgreen;
+}
+div#redraw_styleguide_inner{
+    width: 1400px; height: 100%; margin: 0px auto;
+    background: lightpink;
+}
+/* 스타일가이드설정 끝 */
