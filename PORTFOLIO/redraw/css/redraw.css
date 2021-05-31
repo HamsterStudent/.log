@@ -12,34 +12,34 @@ h1#redraw_logo{
 h1#redraw_logo img{
     width: 100%; background-size: cover;
 }
-div#content_wrap{
+div#sub_content_wrap{
     width: 100%; height: 100%; float: left;
 }
-nav#redraw_info_wrap{
+nav#project_info_wrap{
     width: 100%; height: auto; float: left;
     position: relative; left: 0px; top: 0px;
 }
-div#redraw_info_inner{
+div#project_info_inner{
     width: 1400px; height: 100%;
     margin: 0px auto;
     position: relative; left: 0px; top: 0px;
 }
-div#redraw_info_inner>h1{
+div#project_info_inner>h1{
     font: normal 21px "Roboto"; color: white;
     margin-top: 106px;
 }
-div#redraw_web_img{
+div#project_web_img{
     width: 1400px; height: 850px; border-radius: 0px 5px 0px 0px;
     background: url('/log/redraw/images/redraw_web.png')no-repeat; background-size: cover;
     margin-top: 50px;
 }
-div#redraw_mob_img{
+div#project_mob_img{
     width: 450px; height: 932.83px;
     position: absolute; right: 0px;
     margin-top: 40px;
     background: url('/log/redraw/images/redraw_mob.png')no-repeat; background-size: cover;
 }
-dl#redraw_introduce_list{
+dl#project_introduce_list{
     width: 700px; height: 400px; margin-top: 18px;
 }
 .category_title{
@@ -55,7 +55,7 @@ dd.content_text{
     font: normal 14px/24px "Roboto"; color: white; font-weight: 400; letter-spacing: -5%;
 }
 /* 리드로우소개설정 시작 */
-dl#redraw_introduce_list dd{
+dl#project_introduce_list dd{
     float: left;
 }
 dd.content_percent{
@@ -93,15 +93,15 @@ dd.content_text_bold div{
     float: left; 
 }
 /* 리드로우소개설정 끝 */
-div#redraw_idea{
+div#project_idea{
     padding-top: 54px; box-sizing: border-box;
     width: 100%; height: 474px;
 }
-ul#redraw_goal_list{
+ul#project_goal_list{
     width: 100%; height: 500px;
     float: left;
 }
-ul#redraw_goal_list li{
+ul#project_goal_list li{
     width: 50%; height: 200px; float: left; margin-top: 20px;
     text-align: center;
 }
@@ -113,61 +113,61 @@ p.goal_text{
     font: normal 16px/24px "Roboto"; color: white;
 }
 /* 리드로우퍼소나설정 시작 */
-div#redraw_persona_wrap{
+div#project_persona_wrap{
     width: 100%; height: 1100px; float: left; margin-top: 60px;
 }
-div#redraw_persona_inner{
+div#project_persona_inner{
     width: 100%; height: 1000px; margin: 0px auto; margin-top: 30px;
     border: solid 2px white; box-sizing: border-box;
     padding: 40px;
 }
-ul.redraw_persona_list{
+ul.project_persona_list{
     width: 100%; height: 450px; float: left;
     position: relative; left: 0px; top: 0px;
 }
-ul.redraw_persona_list:last-child{
+ul.project_persona_list:last-child{
     margin-top: 30px;
 }
-h3.redraw_persona_people{
+h3.project_persona_people{
     font: normal 16px "Roboto"; font-weight: 700; color: white;
     margin-bottom: 40px;
 }
-ul.redraw_persona_list>li{
+ul.project_persona_list>li{
     margin-bottom: 20px;
 }
-ul.redraw_persona_list>li:nth-child(5){
+ul.project_persona_list>li:nth-child(5){
     position: absolute; left: 410px; top: 80px;
 }
-ul.redraw_persona_list>li:nth-child(6){
+ul.project_persona_list>li:nth-child(6){
     position: absolute; left: 410px; top: 300px;
 }
-ul.redraw_persona_list>li:last-child{
+ul.project_persona_list>li:last-child{
     position: absolute; right: 0px; top: 80px;
 }
-p.redraw_persona_sub_title{
+p.project_persona_sub_title{
     font: normal 16px "Roboto"; color: white; font-weight: 500;
     margin-bottom: 10px;
 }
-.redraw_persona_text{
+.project_persona_text{
     font: normal 16px/24px "Roboto"; color: white; font-weight: 400;
     letter-spacing: -1px;
 }
 ul.submenu_content li{
     margin-top: 20px;
 }
-li.redraw_persona_graph{
+li.project_persona_graph{
     width: 540px; height: 150px;
 }
-li.redraw_persona_graph>div{
+li.project_persona_graph>div{
     width: 100%; height: 1px; background: white; margin: 30px auto; float: left;
 }
-li.redraw_persona_graph>ul>li{
+li.project_persona_graph>ul>li{
     width: 108px; height: 24px; float: left;
     text-align: center;
     position: relative; left: 0px; top: 0px;
     font: normal 16px "Roboto"; font-weight: 400; letter-spacing: -1px;
 }
-li.redraw_persona_graph>ul>li::after{
+li.project_persona_graph>ul>li::after{
     content: "";
     width: 15px; height: 15px; background: white;
     position: absolute; left: 50%; top: 30px; margin-left: -7.5px;
@@ -183,7 +183,7 @@ ul.graph_top>li:last-child::after{
     background: transparent;
 
 }
-li.redraw_persona_graph>ul.graph_bottom>li::after{
+li.project_persona_graph>ul.graph_bottom>li::after{
     top: -22px;
 }
 ul.graph_bottom>li:first-child::after{
@@ -194,50 +194,50 @@ ul.graph_bottom>li:nth-child(4)::after{
 }
 /* 리드로우퍼소나설정 끝 */
 /* 스토리보드설정 시작 */
-nav#redraw_storyboard_wrap{
+nav#project_storyboard_wrap{
     width: 100%; height: 1800px; float: left;
     margin-top: 20px;
 }
-div#redraw_storyboard_inner{
+div#project_storyboard_inner{
     width: 1400px; height: 100%; margin: 0px auto;
 }
-ul#redraw_storyboard_list{
+ul#project_storyboard_list{
     width: 100%; font-size: 0;
     margin-top: 20px;
 }
-ul#redraw_storyboard_list>li{
+ul#project_storyboard_list>li{
     width: 32.85%;
     margin-right: 10px; margin-bottom: 10px;
     display: inline-block; vertical-align: top;
 }
-ul#redraw_storyboard_list img{
+ul#project_storyboard_list img{
     width: 100%;
     background-size: cover;
 }
-ul#redraw_storyboard_list li:nth-child(3n){
+ul#project_storyboard_list li:nth-child(3n){
     margin-right: 0px;
 }
 /* 스토리보드설정 끝 */
 /* 스타일가이드설정 시작 */
-nav#redraw_styleguide_wrap{
+nav#project_styleguide_wrap{
     width: 100%; height: 600px; float: left;
 }
-div#redraw_styleguide_inner{
+div#project_styleguide_inner{
     width: 1400px; height: 100%; margin: 0px auto;
 }
-ul#redraw_styleguide_list{
+ul#project_styleguide_list{
     width: 100%; height: auto; margin-top: 30px;
 }
-ul#redraw_styleguide_list>li{
+ul#project_styleguide_list>li{
     float: left; margin-bottom: 50px;
 }
-ul#redraw_styleguide_list>li:first-child{
+ul#project_styleguide_list>li:first-child{
     width: 100%; font: normal 16px/28px "Roboto"; color: white;
 }
-ul#redraw_styleguide_list>li:nth-child(2){
+ul#project_styleguide_list>li:nth-child(2){
     width: 60%;
 }
-ul#redraw_styleguide_list>li:nth-child(3){
+ul#project_styleguide_list>li:nth-child(3){
     width: 40%;
     font: normal 16px "Noto Sans KR"; font-weight: 300;
 }
@@ -259,10 +259,10 @@ li.font_sub_title_eng>p{
 li.font_sub_title_eng>p:first-child{
     margin-bottom: 10px;
 }
-ul#redraw_styleguide_list>li:nth-child(4){
+ul#project_styleguide_list>li:nth-child(4){
     width: 40%;
 }
-ul#redraw_styleguide_list>li:last-child{
+ul#project_styleguide_list>li:last-child{
     width: 60%;
 }
 div.styleguide_color{
@@ -302,3 +302,11 @@ li.styleguide_concept_img>img:last-child{
     margin-right:0px;
 }
 /* 스타일가이드설정 끝 */
+/* 코드설정 시작 */
+nav#coad_wrap{
+    width: 100%; height: 2500px; float: left;
+}
+div#coad_inner{
+    width: 1400px; height: 100%; margin: 0px auto;
+}
+/* 코드설정 끝 */
