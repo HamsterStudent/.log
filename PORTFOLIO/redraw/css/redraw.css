@@ -303,10 +303,10 @@ li.styleguide_concept_img>img:last-child{
 }
 /* 스타일가이드설정 끝 */
 /* 코드설정 시작 */
-nav#coad_wrap{
+nav#code_wrap{
     width: 100%; height: 2500px; float: left;
 }
-div#coad_inner{
+div#code_inner{
     width: 1400px; height: 100%; margin: 0px auto;
 }
 /* 코드설정 끝 */
