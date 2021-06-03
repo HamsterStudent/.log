@@ -309,4 +309,28 @@ nav#code_wrap{
 div#code_inner{
     width: 1400px; height: 100%; margin: 0px auto;
 }
+ul#code_category_list{
+    width: 100%; height: 2300px;
+}
+ul#code_category_list li{
+    width: 100%; float: left;
+    margin-bottom: 66px;
+    background: olive;
+}
+p.code_category_title{
+    font: normal 24px "Roboto"; color: white; font-weight: 400;
+}
+div.code_visual_img img{
+    width: 100%;
+    background-size: cover;
+}
+div.code_source_img{
+    width: 690px; height: 120px; float: left;
+    margin-right: 20px;
+    background: orange;
+}
+div.code_script_img{
+    width: 690px; height: 120px; float: left;
+    background: salmon;
+}
 /* 코드설정 끝 */
