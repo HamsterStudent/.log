@@ -13,7 +13,7 @@ h1#redraw_logo img{
     width: 100%; background-size: cover;
 }
 div#sub_content_wrap{
-    width: 100%; height: 100%; float: left;
+    width: 100%; height: auto; float: left;
 }
 nav#project_info_wrap{
     width: 100%; height: auto; float: left;
@@ -311,26 +311,53 @@ div#code_inner{
 }
 ul#code_category_list{
     width: 100%; height: 2300px;
+    margin-top: 40px;
 }
 ul#code_category_list li{
     width: 100%; float: left;
     margin-bottom: 66px;
-    background: olive;
 }
 p.code_category_title{
     font: normal 24px "Roboto"; color: white; font-weight: 400;
 }
 div.code_visual_img img{
-    width: 100%;
-    background-size: cover;
+    width: 100%; display: block; margin: 0px auto;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px 3px rgba(33, 33, 33, 0.25);
 }
 div.code_source_img{
     width: 690px; height: 120px; float: left;
+    border-radius: 15px;
     margin-right: 20px;
-    background: orange;
+    background: url('/log/redraw/images/redraw_markup.png');
+    font: normal 18px/120px "Roboto";
+    color: white; text-indent: 50px;
 }
 div.code_script_img{
     width: 690px; height: 120px; float: left;
-    background: salmon;
+    border-radius: 15px;
+    background: url('/log/redraw/images/redraw_JavaScript.png');
+    font: normal 18px/120px "Roboto";
+    color: white; text-indent: 50px;
+}
+div.float_window{
+    display: none;
 }
 /* 코드설정 끝 */
+/* 하단영역설정 시작 */
+footer#sub_footer_wrap{
+    width: 100%; height: 300px; float: left;
+}
+div#sub_footer_inner{
+    width: 1400px; height: 100%;
+    margin: 0px auto;
+    position: relative; top: 0px; left: 0px;
+}
+div#sub_footer_inner p{
+    position: absolute; left: 50%; margin-left: -72.45px;
+    line-height: 300px;
+    font: normal 20px/300px "Roboto";
+    color: white;
+}
+/* 하단영역설정 끝 */
