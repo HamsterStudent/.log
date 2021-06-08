@@ -349,8 +349,8 @@ div.float_window{
     width: 1000px; height: auto;
     position: absolute; top: 0px; left: 0px;
     background: salmon;
-    display: none;
     opacity: 0;
+    z-index: 2;
 }
 
 

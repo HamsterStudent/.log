@@ -1,25 +1,54 @@
-window.addEventListener('load', ()=>{
-    codePopup();
-    // codePopupMove();
-})
+// window.addEventListener('load', ()=>{
+//     codePopup();
+//     // codePopupMove();
+// })
 
-function codePopup(){
-    // alert('test')
-    const markupBtn=document.querySelectorAll('.code_source_img')
-    const popup=document.querySelectorAll('.float_window')
+// function codePopup(){
+//     // alert('test')
+//     const markupBtn=document.querySelectorAll('.code_source_img')
+//     const popup=document.querySelectorAll('.float_window')
 
-    for(let item of markupBtn){
-        item.addEventListener('click', popupEvent);
+//     for(let item of markupBtn){
+//         item.addEventListener('click', popupEvent);
+//     }
+
+//     function popupEvent(){
+//         // alert('test')
+//         gsap.set(popup, {display:'block'})
+//         gsap.to(popup, {opacity:1, duration:0.3, ease:'power1.out'})
+//     }
+
+// }
+
+class Popup{
+
+    constructor(selectedBtn){
+        this.popupName=document.querySelector(selectedBtn)
+        this.popup=this.popupName.children[1];
+        console.log(this.popup)
+
+        this.initEvent();
     }
 
-    function popupEvent(){
-        // alert('test')
-        gsap.set(popup, {display:'block'})
-        gsap.to(popup, {opacity:1, duration:0.3, ease:'power1.out'})
+    initEvent(){
+
+        this.popup.addEventListener('click',()=>{
+            this.popupEvent();
+        })    
+    }
+
+    popupEvent(){
+        gsap.set(this.popup, {display:'block'})
+        gsap.to(this.popup, {opacity:1, duration:0.3, ease:'power1.out'})
     }
 
 }
 
+window.addEventListener('load',()=>{
+    let floatWindow1=new Popup('#float_window1')
+    let floatWindow2=new Popup('#float_window2')
+    let floatWindow3=new Popup('#float_window3')
+})
 
 
 // function codePopupMove(){
