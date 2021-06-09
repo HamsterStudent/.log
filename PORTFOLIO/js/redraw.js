@@ -24,17 +24,19 @@ class Popup{
 
     constructor(selectedBtn){
         this.popupName=document.querySelector(selectedBtn)
+        this.popupBtn=this.popupName.children[0];
         this.popup=this.popupName.children[1];
-        console.log(this.popup)
+        console.log(this.popupBtn)
 
         this.initEvent();
     }
 
     initEvent(){
 
-        this.popup.addEventListener('click',()=>{
+        this.popupBtn.addEventListener('click',()=>{
             this.popupEvent();
-        })    
+        })
+        
     }
 
     popupEvent(){
