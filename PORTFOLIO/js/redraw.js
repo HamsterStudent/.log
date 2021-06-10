@@ -50,6 +50,9 @@ window.addEventListener('load',()=>{
     let floatWindow1=new Popup('#float_window1')
     let floatWindow2=new Popup('#float_window2')
     let floatWindow3=new Popup('#float_window3')
+    let floatWindow4=new Popup('#float_window4')
+    let floatWindow5=new Popup('#float_window5')
+    let floatWindow6=new Popup('#float_window6')
 })
 
 
