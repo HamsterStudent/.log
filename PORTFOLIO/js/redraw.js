@@ -24,6 +24,7 @@ class Popup{
 
     constructor(selectedBtn){
         this.popupName=document.querySelector(selectedBtn)
+        this.background=document.querySelector('#sub_content_wrap')
         this.popupBtn=this.popupName.children[0];
         this.popup=this.popupName.children[1];
         console.log(this.popupBtn)
@@ -36,12 +37,20 @@ class Popup{
         this.popupBtn.addEventListener('click',()=>{
             this.popupEvent();
         })
+        this.background.addEventListener('click',()=>{
+            this.popupClose();
+        })
         
     }
 
     popupEvent(){
         gsap.set(this.popup, {display:'block'})
         gsap.to(this.popup, {opacity:1, duration:0.3, ease:'power1.out'})
+    }
+    popupClose(){
+        gsap.to(this.popup, {opacity:0, duration:0.3, ease:'power1.out', onComplete:()=>{
+            display:'none'
+        }})
     }
 
 }

@@ -343,8 +343,6 @@ div.code_script_img{
     font: normal 18px/120px "Roboto";
     color: white; text-indent: 50px;
 }
-
-
 div.float_window_wrap{
     width: 1048px; height: auto;
     overflow: auto;
