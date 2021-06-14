@@ -1,33 +1,16 @@
-// window.addEventListener('load', ()=>{
-//     codePopup();
-//     // codePopupMove();
-// })
+window.addEventListener('load',()=>{
+    popupEvent();
+    topBtnSlide();
+    ContentsEffect();
+})
 
-// function codePopup(){
-//     // alert('test')
-//     const markupBtn=document.querySelectorAll('.code_source_img')
-//     const popup=document.querySelectorAll('.float_window')
-
-//     for(let item of markupBtn){
-//         item.addEventListener('click', popupEvent);
-//     }
-
-//     function popupEvent(){
-//         // alert('test')
-//         gsap.set(popup, {display:'block'})
-//         gsap.to(popup, {opacity:1, duration:0.3, ease:'power1.out'})
-//     }
-
-// }
-
-class Popup{
+class Popup{ //팝업 클래스코딩
 
     constructor(selectedBtn){
         this.popupName=document.querySelector(selectedBtn)
-        this.background=document.querySelector('#sub_content_wrap')
+        this.popupCloseBtn=this.popupName.children[1].children[0];
         this.popupBtn=this.popupName.children[0];
         this.popup=this.popupName.children[1];
-        console.log(this.popupBtn)
 
         this.initEvent();
     }
@@ -37,7 +20,7 @@ class Popup{
         this.popupBtn.addEventListener('click',()=>{
             this.popupEvent();
         })
-        this.background.addEventListener('click',()=>{
+        this.popupCloseBtn.addEventListener('click',()=>{
             this.popupClose();
         })
         
@@ -48,22 +31,50 @@ class Popup{
         gsap.to(this.popup, {opacity:1, duration:0.3, ease:'power1.out'})
     }
     popupClose(){
-        gsap.to(this.popup, {opacity:0, duration:0.3, ease:'power1.out', onComplete:()=>{
-            display:'none'
-        }})
+            gsap.to(this.popup, {opacity:0, duration:0.3, ease:'power1.out', display:'none'})
     }
 
 }
 
-window.addEventListener('load',()=>{
+function popupEvent(){
     let floatWindow1=new Popup('#float_window1')
     let floatWindow2=new Popup('#float_window2')
     let floatWindow3=new Popup('#float_window3')
     let floatWindow4=new Popup('#float_window4')
     let floatWindow5=new Popup('#float_window5')
     let floatWindow6=new Popup('#float_window6')
-})
+}
 
+function topBtnSlide(){
+    const topBtn=document.querySelector('#top_button')
+
+    let topBtnTop=850;
+
+    window.addEventListener('scroll', windowScroll);
+    topBtn.addEventListener('click', quickPageTop);
+
+    function quickPageTop(){
+        gsap.to('body,html', {scrollTop:0, duration:0.5, ease:'power1.out'})
+    }
+
+    function windowScroll(){
+        let scrollHeight=window.pageYOffset;
+
+        gsap.to(topBtn, {top:scrollHeight+topBtnTop, duration:.8, ease:'power1.out'})
+    }
+
+}
+
+function ContentsEffect(){
+    const projectMainImg=document.querySelector('#project_web_img');
+
+    initEvent();
+
+    function initEvent(){
+        gsap.to(projectMainImg, {opacity:1, duration:0.8, ease:'power1.out'})
+        
+    }
+}
 
 // function codePopupMove(){
 //     // alert("점심머먹어요")
