@@ -56,6 +56,7 @@ div#project_mob_img{
 }
 dl#project_introduce_list{
     width: 700px; height: 400px; margin-top: 18px;
+    opacity: 0; position: relative; top: 50px;
 }
 .category_title{
     font: normal 48px "Roboto";
@@ -111,10 +112,12 @@ dd.content_text_bold div{
 div#project_idea{
     padding-top: 54px; box-sizing: border-box;
     width: 100%; height: 474px;
+    opacity: 0; position: relative; top: 50px;
 }
 ul#project_goal_list{
     width: 100%; height: 500px;
     float: left;
+    position: relative; top: 50px; opacity: 0;
 }
 ul#project_goal_list li{
     width: 50%; height: 200px; float: left; margin-top: 20px;
@@ -130,6 +133,7 @@ p.goal_text{
 /* 리드로우퍼소나설정 시작 */
 div#project_persona_wrap{
     width: 100%; height: 1100px; float: left; margin-top: 60px;
+    position: relative; top: 50px; opacity: 0;
 }
 div#project_persona_inner{
     width: 100%; height: 1000px; margin: 0px auto; margin-top: 30px;
@@ -224,6 +228,7 @@ ul#project_storyboard_list>li{
     width: 32.85%;
     margin-right: 10px; margin-bottom: 10px;
     display: inline-block; vertical-align: top;
+    position: relative; top: 100px; opacity: 0;
 }
 ul#project_storyboard_list img{
     width: 100%;
@@ -351,12 +356,20 @@ div.code_source_img{
     font: normal 18px/120px "Roboto";
     color: white; text-indent: 50px;
 }
+div.code_source_img:hover{
+    font-weight: 700;
+    box-shadow: 0px 2px 5px 3px rgba(33, 33, 33, 0.25);
+}
 div.code_script_img{
     width: 690px; height: 120px; float: left;
     border-radius: 15px;
     background: url('/log/redraw/images/redraw_JavaScript.png');
     font: normal 18px/120px "Roboto";
     color: white; text-indent: 50px;
+}
+div.code_script_img:hover{
+    font-weight: 700;
+    box-shadow: 0px 2px 5px 3px rgba(33, 33, 33, 0.25);
 }
 div.float_window_wrap{
     width: 1048px; height: auto;

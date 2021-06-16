@@ -1,6 +1,7 @@
 window.addEventListener('load',()=>{
     horizontalScroll()
     mainScrollSlide()
+
 })
 
 function horizontalScroll(){

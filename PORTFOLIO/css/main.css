@@ -90,6 +90,9 @@ ul#portfolio_list li{
 ul#portfolio_list li a{
     text-decoration: none;
 }
+ul#portfolio_list li p:hover{
+    font-weight: 500;
+}
 ul#portfolio_list li:nth-child(2){
     width: 795px;
     background: url('/log/images/redraw.jpg') no-repeat; background-size: cover;

@@ -66,33 +66,39 @@ function topBtnSlide(){
 }
 
 function ContentsEffect(){
-    const projectMainImg=document.querySelector('#project_web_img');
+    const mainImg=document.querySelector('#project_web_img');
+    const info=document.querySelector('#project_introduce_list')
+    const idea=document.querySelector('#project_idea')
+    const goal=document.querySelector('#project_goal_list')
+    const persona=document.querySelector('#project_persona_wrap')
+    const storyboardLi=document.querySelectorAll('#project_storyboard_list>li')
 
     initEvent();
 
     function initEvent(){
-        gsap.to(projectMainImg, {opacity:1, duration:0.8, ease:'power1.out'})
+        gsap.to(mainImg, {opacity:1, duration:0.8, ease:'power1.out'})
+        window.addEventListener('scroll', infoScroll)
+
+        function infoScroll(){
+            let scrollHeight=window.pageYOffset;
+            if(scrollHeight>800){
+                gsap.to(info,{top:0, opacity:1, duration:0.5, ease:'power1.out'})
+            }
+            if(scrollHeight>1000){
+                gsap.to(idea,{top:0, opacity:1, duration:0.5, ease:'power1.out'})
+            }
+            if(scrollHeight>1500){
+                gsap.to(goal,{top:0, opacity:1, duration:0.5, ease:'power1.out'})
+            }
+            if(scrollHeight>2000){
+                gsap.to(persona,{top:0, opacity:1, duration:0.5, ease:'power1.out'})
+            }
+            if(scrollHeight>3000){
+                for(let i=0; i<storyboardLi.length; i++){
+                    gsap.to(storyboardLi[i],{top:0, opacity:1, duration:0.3+(0.3*i), ease:'power1.out'})
+                }
+            }
+        }
         
     }
 }
-
-// function codePopupMove(){
-//     // alert("점심머먹어요")
-//     const popup=document.querySelector('.float_window');
-//     const dragbar=document.querySelector('.float_window dt')
-
-//     let downX;
-//     let downY;
-    
-//     dragbar.addEventListener('mousedown', dragDown);
-
-//     function dragDown(e){
-//         downX=e.offsetX;
-//         downY=e.offsetY;
-//         document.addEventListener('mousemove',dragMove)
-//     }
-
-//     function dragMove(e){
-//         gsap.set(popup, {left:e.pageX-downX, top:e.pageY-downY})
-//     }
-// }
