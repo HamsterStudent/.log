@@ -72,6 +72,7 @@ function ContentsEffect(){
     const goal=document.querySelector('#project_goal_list')
     const persona=document.querySelector('#project_persona_wrap')
     const storyboardLi=document.querySelectorAll('#project_storyboard_list>li')
+    const styleGuide=document.querySelector('#project_styleguide_wrap')
 
     initEvent();
 
@@ -97,6 +98,9 @@ function ContentsEffect(){
                 for(let i=0; i<storyboardLi.length; i++){
                     gsap.to(storyboardLi[i],{top:0, opacity:1, duration:0.3+(0.3*i), ease:'power1.out'})
                 }
+            }
+            if(scrollHeight>5000){
+                gsap.to(styleGuide,{top:0, opacity:1, duration:0.5, ease:'power1.out'})
             }
         }
         
