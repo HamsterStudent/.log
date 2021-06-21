@@ -1,6 +1,6 @@
 body{
+    height: auto;
     background: white;
-    background-size: 60px 60px;
 }
 
 div#contents_wrap{

@@ -46,10 +46,36 @@ dl#info_text{
     width: 1100px;
     position: absolute; left: 30px; top: 30px;
 }
-dl#info_text dt{
+/* 타이핑 애니메이션 시작 */
+div.wrapper {
+    display: flex;
+}
+
+div.typing_ani {
+    width: 14ch;
+    animation: typing 1.5s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
     font: normal 40px "Inconsolata" ; font-weight: 600;
     margin-bottom: 10px; color: white;
-}
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+/* 타이핑 애니메이션 끝 */
+
 dl#info_text dd{
     font: normal 14px/20px "Roboto"; font-weight: 400;
     margin-bottom: 10px; color: white;
@@ -86,6 +112,7 @@ ul#portfolio_list li{
     position: relative;
     border: solid 2.5px black; box-sizing: border-box;
     background: rgb(255, 183, 94);
+    cursor: crosshair;
 }
 ul#portfolio_list li a{
     text-decoration: none;
@@ -142,74 +169,87 @@ p.portfolio_title{
 
 /* 툴활용능력설정 시작 */
 nav#about_me_wrap{
-    width: 25%; height: 750px; float: left;
+    width: 25%; height: 570px; float: left;
+    position: relative; top: -30px;
 }
 div#about_me_inner{
     width: 1400px; height: 100%;
     margin: 0px auto;
 }
-ul#about_me_list{
-    width: 150%; height: 100%;
+
+.container{
+    width: 100%; height: 570px;
+    position: relative; top: 60px;
+    display: flex;
+    justify-content: space-around;
 }
-ul#about_me_list>li{
-    width: 450px; height: 100%; margin-right: 20px; float: left;
-    border-radius: 15px; box-sizing: border-box; padding: 40px;
-    background: salmon;
+.container .card{
+    width: 420px;
+    position: relative;
+    cursor: pointer;
 }
-ul#about_me_list>li:nth-child(1){
-    background: #F1E5D9;
+.container .card .face{
+    width: 100%;
+    height: 300px;
+    transition: 0.5s;
 }
-ul#about_me_list>li:nth-child(2){
+.container .card .face.face1{
+    position: relative; 
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(150px);
+}
+.container .card:hover .face.face1{
     background: #B67267;
+    transform: translateY(0);
 }
-ul#about_me_list>li:nth-child(3){
-    background: #A1AFA2;
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
 }
-ul#about_me_list>li:last-child{
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+.container .card .face.face1 .content p{
+    margin: 10px 0 0;
+    padding: 0;
     color: white;
-    background: #231816;
-    margin-right: 0px;
+    text-align: center;
+    font-size: 1.5em;
 }
+.container .card .face.face2{
+    position: relative;
+    background: #B67267;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-150px);
+}
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
 p.about_me_title{
     font: normal 24px "Inconsolata"; font-weight: 400; color: black;
     text-align: center;
     margin-top: 48px;
     position: relative; left: 0px; top: 0px;
 }
-p.line_white{
-    font: normal 24px "Inconsolata"; font-weight: 400; color: white;
-    text-align: center;
-    margin-top: 48px;
-    position: relative; left: 0px; top: 0px;
-}
-p.about_me_title::after{
-    content: "";
-    background: black; width: 370px; height: 1px;
-    position: absolute; left: 0px; top: 61px;
-}
-p.line_white::after{
-    content: "";
-    background: white; width: 370px; height: 1px;
-    position: absolute; left: 0px; top: 61px;
-}
+
 ul.about_me_tool{
-    width: 330px; height: 220px;
-    margin-top: 90px;
+    width: 100%; height: 220px;
     position: relative; left: 0px; top: 0px;
-}
-ul.about_me_tool::after{
-    content: "";
-    background: black; width: 370px; height: 1px;
-    position: absolute; left: 0px; bottom: -38px;
-}
-ul.bottom_line_white::after{
-    content: "";
-    background: white; width: 370px; height: 1px;
-    position: absolute; left: 0px; bottom: -38px;
 }
 ul.about_me_tool li{
     width: 370px;
     margin-bottom: 30px; font: normal 18px "Inconsolata";
+    
 }
 ul.about_me_tool li>div{
     width: 200px; height: 10px; border-radius: 5px; float: right;
@@ -233,10 +273,10 @@ div.percentage_60{
     background: black; box-sizing: border-box;
     position: absolute; left: 0px; top: 0px;
 }
-
 li.about_me_middle_title{
     margin-top: 50px;
 }
+
 /* 툴활용능력설정 끝 */
 
 /* 컨텍트설정 시작 */
@@ -262,9 +302,9 @@ dl#contact_list dd{
 }
 dl#contact_list button{
     width: 160px; height: 66px; background: transparent; border: solid 1px white; 
-}
-dl#contact_list button a{
     text-decoration: none; color: white;
+    cursor: pointer;
+
 }
 /* 컨텍트설정 끝 */
 

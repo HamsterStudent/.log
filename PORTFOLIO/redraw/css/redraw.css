@@ -12,6 +12,7 @@ div#top_button{
     background: #F2B705; color: #0077D3; font-weight: 900;
     position: absolute; bottom: 50px; right: 100px; z-index: 2;
     transition: 0.2s ease;
+    cursor: pointer;
 }
 div#top_button:hover{
     color: black;
@@ -356,6 +357,7 @@ div.code_source_img{
     background: url('/log/redraw/images/redraw_markup.png');
     font: normal 18px/120px "Roboto";
     color: white; text-indent: 50px;
+    cursor: pointer;
 }
 div.code_source_img:hover{
     font-weight: 700;
@@ -367,6 +369,7 @@ div.code_script_img{
     background: url('/log/redraw/images/redraw_JavaScript.png');
     font: normal 18px/120px "Roboto";
     color: white; text-indent: 50px;
+    cursor: pointer;
 }
 div.code_script_img:hover{
     font-weight: 700;
@@ -394,6 +397,7 @@ dl.float_window_inner dt{
 
 div.popup_close_btn{
     position: absolute; top: 30px; right: 30px;
+    cursor: pointer;
 }
 
 

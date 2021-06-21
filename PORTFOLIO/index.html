@@ -46,7 +46,11 @@
                     <td id="value_list">calm</br>patience</br>creative</br>responsibility</td>
                     <td class="wide_size">
                         <dl id="info_text">
-                            <dt>Orbit of Pearl</dt>
+                            <div class="wrapper">
+                                <div class="typing_ani">
+                                    Orbit of Pearl
+                                </div>
+                            </div>
                             <dd>This WEB of 'JINJU' is going to guide you to her works</dd>
                             <dd>&nbsp;&nbsp;디자인과 회화를 배우며 우리 주변에 있는 것들을 재구성하고 다시 조립하면서 알게된 것 중 한가지는 세상의 많은 것들이 여러 번의 정리정돈과 수정하는 과정을 통해    제 이야기를 꾸리고, 그 안에서 그 자신만의 독창성을 지니게 된다는 것이었습니다.  탄생한 지 얼마 되지 않은 행성들이 항성 근처에 편입하게 되는 과정에서 으레 그렇듯, 많은 것들이 항성 근처에 중력으로 묶이며  항성과 너무 가까워져 흡수되어버리기도 하고, 다른 행성들과 부딪혀 없어지기도 하지만, 이 과정을 지나고 나면 행성은 항성을 중심으로 궤도를 그리며 그 자신의 세상을 꾸리고는 합니다. 핵분열과 대기순환 등을 통해,
                                 또 자신만의 위성을 거느리기도 하면서.</br></br>
@@ -87,7 +91,7 @@
                     <p class="portfolio_category">WEB</p>
                     <p class="portfolio_title">Ugly Duck Ballet</p>
                 </a></li>
-                <li><a href="#">
+                <li class="square" onclick="location='/log/design_sub/binary_star.html'"><a href="/log/design_sub/binary_star.html">
                     <p class="portfolio_category">EDITORIAL</p>
                     <p class="portfolio_title">Spectroscopic Binary Star</p>
                 </a></li>
@@ -103,50 +107,59 @@
     <!-- 툴활용능력 시작 -->
     <nav id="about_me_wrap" class="contents">
         <div id="about_me_inner">
-            <ul id="about_me_list">
-                <li>
-                    <p class="about_me_title">Design Tool</p>
-                    <ul class="about_me_tool">
-                        <li>Photoshop
-                            <div>
-                                <div class="percentage_75"></div>
-                            </div>
-                        </li> 
-                        <li>Illustrator<div><div class="percentage_85"></div></div></li>
-                        <li>InDesign<div><div class="percentage_75"></div></div></li>
-                        <li>XD<div><div class="percentage_75"></div></div></li>
-                        <li>Figma<div><div class="percentage_85"></div></div></li>
-                    </ul>                    
-                </li>
-                <li>
-                    <p class="about_me_title">Developer Tool</p>
-                    <ul class="about_me_tool">
-                        <li>Visual Studio<div><div class="percentage_75"></div></div></li>
-                        <li class="about_me_middle_title">Programming language</li>
-                        <li>HTML/CSS<div><div class="percentage_75"></div></div></li>
-                        <li>JavaScript<div><div class="percentage_60"></div></div></li>
-                    </ul>
-                </li>
-                <li>
-                    <p class="about_me_title">ect.</p>
-                    <ul class="about_me_tool">
-                        <li>Notion<div><div class="percentage_75"></div></div></li>
-                        <li>MAYA<div><div class="percentage_60"></div></div></li>
-                        <li>Premiere<div><div class="percentage_60"></div></div></li>
-                        <li>Drawing<div><div class="percentage_75"></div></li>
-                    </ul>
-                </li>
-                <li>
-                    <p class="about_me_title line_white">Like</p>
-                    <ul class="about_me_tool bottom_line_white">
-                        <li>&middot; Drawing</li>
-                        <li>&middot; Reading</li>
-                        <li>&middot; Writing</li>
-                        <li>&middot; Ballet</li>
-                        <li>&middot; Listening Music</li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="container">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <p class="about_me_title">Design Tool</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <ul class="about_me_tool">
+                                <li>Photoshop<div><div class="percentage_75"></div></div></li> 
+                                <li>Illustrator<div><div class="percentage_85"></div></div></li>
+                                <li>InDesign<div><div class="percentage_75"></div></div></li>
+                                <li>XD<div><div class="percentage_75"></div></div></li>
+                                <li>Figma<div><div class="percentage_85"></div></div></li>
+                            </ul>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1 green_card">
+                        <div class="content">
+                            <p class="about_me_title">Developer Tool</p>
+                        </div>
+                    </div>
+                    <div class="face face2 green_card">
+                        <div class="content">
+                            <ul class="about_me_tool">
+                                <li>Visual Studio<div><div class="percentage_75"></div></div></li>
+                                <li class="about_me_middle_title">Programming language</li>
+                                <li>HTML/CSS<div><div class="percentage_75"></div></div></li>
+                                <li>JavaScript<div><div class="percentage_60"></div></div></li>
+                            </ul>                   
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <p class="about_me_title">ect.</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <ul class="about_me_tool">
+                                <li>Notion<div><div class="percentage_75"></div></div></li>
+                                <li>Premiere<div><div class="percentage_60"></div></div></li>
+                                <li>Drawing<div><div class="percentage_75"></div></li>
+                            </ul>                 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- 툴활용능력 끝 -->
@@ -160,7 +173,7 @@
                 <dd>1996. 03. 25&nbsp;&nbsp;&nbsp;&nbsp;Seoul, South Korea</dd>
                 <dd>hwanyamyu@gmail.com</dd>
                 <dd>010. 2983. 6432</dd>
-                <button><a href="#">Back to HOME</a></button>
+                <button id="homebtn">Back to HOME</button>
             </dl>
         </div>
     </nav>

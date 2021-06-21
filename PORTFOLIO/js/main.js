@@ -1,7 +1,8 @@
 window.addEventListener('load',()=>{
     horizontalScroll()
     mainScrollSlide()
-
+    homeBtnSlide();
+    
 })
 
 function horizontalScroll(){
@@ -92,5 +93,15 @@ function mainScrollSlide(){
 
         menuActivate(menuClickNum)
 
+    }
+}
+
+function homeBtnSlide(){
+    const homeBtn=document.querySelector('#homebtn')
+    
+    homeBtn.addEventListener('click', quickPageTop);
+
+    function quickPageTop(){
+        gsap.to('body,html', {scrollTop:0, duration:0.5, ease:'power1.out'})
     }
 }
